@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab.course_management_system.fxControllers.FolderWindow">
+   <children>
+      <Label fx:id="folderName" layoutX="272.0" layoutY="31.0" text="Folder title" textAlignment="CENTER" />
+      <TreeView fx:id="folderTreeView" layoutX="60.0" layoutY="77.0" prefHeight="228.0" prefWidth="102.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#createNewFolder" text="New folder" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TreeView>
+   </children>
+</AnchorPane>

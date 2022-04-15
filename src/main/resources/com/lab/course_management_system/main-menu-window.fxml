@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab.course_management_system.fxControllers.MainMenuWindow">
+   <children>
+      <ListView fx:id="coursesListView" layoutX="36.0" layoutY="66.0" prefHeight="250.0" prefWidth="200.0" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Account">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#returnToLogInWindow" text="Log out" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Course">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#createNewCourseForm" text="Create new course" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutWindow" text="About application" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="106.0" layoutY="40.0" text="My courses" />
+      <Label fx:id="userTypeLabel" layoutX="335.0" layoutY="40.0" text="User type: " textAlignment="CENTER" />
+   </children>
+</AnchorPane>

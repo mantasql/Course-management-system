@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="269.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lab.course_management_system.fxControllers.NewCourseForm">
+   <children>
+      <Button layoutX="34.0" layoutY="346.0" mnemonicParsing="false" onAction="#createCourse" text="Create" />
+      <Button layoutX="183.0" layoutY="346.0" mnemonicParsing="false" onAction="#goBackToMenu" text="Cancel" />
+      <TextField fx:id="nameField" layoutX="60.0" layoutY="48.0" />
+      <TextArea fx:id="descriptionField" layoutX="35.0" layoutY="125.0" prefHeight="108.0" prefWidth="200.0" />
+      <Label fx:id="nameLabel" layoutX="123.0" layoutY="23.0" text="Title" />
+      <Label fx:id="descriptionLabel" layoutX="104.0" layoutY="87.0" text="Description" />
+   </children>
+</AnchorPane>
